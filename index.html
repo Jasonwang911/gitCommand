@@ -7,5 +7,23 @@
 <body>
 	<div>我是主干任务!</div>
 	<h1>我是一个新功能</h1>
+
+	<script>
+		var arr = [1,2,3,4,5];
+
+		function findInArr(arr,n) {
+			let Num = 0;
+			for(var i = 0; i < arr.length; i++) {
+				if(arr[i] == n) {
+					console.log('有');
+					return true;
+				}
+			}
+			console.log('没有');
+			return false;
+		}
+
+		findInArr(arr, 5);
+	</script>
 </body>
 </html>
